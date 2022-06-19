@@ -307,8 +307,7 @@
         @include f500;
         font-size: 24px;
         transition: all .3s;
-    }
-    
+    }    
 }
 .icosvg-1{
     svg{        
@@ -325,4 +324,42 @@
     svg{
         width: 80px;        
     }    
+}
+
+//start author section
+.author{   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 750px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__box{
+        max-width: 650px;
+        width: 100%;
+        min-height: 215px;
+        background-color: $green;
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+        margin: 0 auto;
+    }
+    &__title{
+        font-size: 30px;
+        line-height: 30px;
+        color: #fff;
+        margin-right: 45px;
+        max-width: 270px;
+        width: 100%;
+        span{
+            @include f500;
+        }
+    }
+    &__link{
+        font-size: 18px;
+        line-height: 36px;
+        background-color: #fff;
+        padding: 14px 40px;
+    }
 }
