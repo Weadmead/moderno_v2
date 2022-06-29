@@ -1,5 +1,18 @@
 $(function () {
   
+//sort by list
+  $('.icon-th-list').on('click', function(){
+    $('.new-item').addClass('list');
+    $('.icon-th-list').addClass('active');
+    $('.icon-th-large').removeClass('active'); 
+       
+  });
+  $('.icon-th-large').on('click', function(){
+    $('.new-item').removeClass('list');
+    $('.icon-th-large').addClass('active');
+    $('.icon-th-list').removeClass('active'); 
+  });
+
   // range-slider
   $(".js-range-slider").ionRangeSlider({
     type: "double",    
@@ -27,6 +40,10 @@ $(function () {
     slidesToScroll: 4,
     arrows: false,
     dots: true
+  });
+  
+  $('.icon-th-list').on('click', function(){
+    $('.product__item').addClass('list')
   });
 
 
