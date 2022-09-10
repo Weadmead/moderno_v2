@@ -43,6 +43,11 @@
 .header__menu {
     background-color: $bg;
 }
+.header__btn-menu,
+.menu__btn {
+    display: none;
+}
+
 
 .menu {
     display: flex;
@@ -114,9 +119,13 @@
 }
 
 .basket {
+    margin-right: 20px;
     span {
         background-color: $green;
     }
+}
+.header{
+    background-color: #fff;
 }
 .header__btn-login--off{
     display: none;
@@ -127,8 +136,7 @@
         display: block;
     }
 }
-.user {
-    margin-left: 20px;
+.user {    
     margin-right: 25px;
     padding-right: 20px;
     position: relative;
@@ -1288,3 +1296,11 @@
         }
     }
 }
+
+
+
+
+
+
+
+@import 'media';
