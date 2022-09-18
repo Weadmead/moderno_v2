@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moderno</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -151,7 +151,8 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <a href="#" class="header__btn header__btn-login">Login</a>
+                                <a class="header__btn header__btn-login" data-fancybox data-src="#modal"
+                                    href="javascript:;">Login</a>
                                 <a href="#" class="header__btn header__btn-logout header__btn-login--off">Logout</a>
                                 <a href="#" class="header__btn header__btn-register">Register</a>
                             </div>
@@ -166,7 +167,7 @@
                                 <div></div>
                                 <div></div>
                                 <div></div>
-                            </div>  
+                            </div>
                             <ul class="menu__list">
                                 <li>
                                     <a href="#">
@@ -1143,7 +1144,26 @@
             </div>
         </footer>
     </div>
-    
+
+
+    <div id="modal">
+        <div class="login__wrapper">
+            <div class="login__title">
+                Login
+            </div>
+            <form>
+                <label class="login__label-name">
+                    <input type="text" placeholder="Name" required>
+                </label>
+                <label class="login__label-pass">
+                    <input type="text" placeholder="Password" required>
+                </label>
+                <button type="submit">Submit</button>
+                <a href="#" class="create-acc">Create An account?</a>
+                <a href="#" class="lost-pass">Lost Password?</a>
+            </form>
+        </div>
+    </div>
 
 
 
