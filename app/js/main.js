@@ -1,5 +1,8 @@
 $(function () {
 
+
+  $('input[type="file"], select').styler();
+
   $('.product-one__tabs .tab, settings__tabs .tab').on('click', function(event) {
     var id = $(this).attr('data-id');
       $('.product-one__tabs, .settings__tabs').find('.tab-item').removeClass('active-tab').hide();
